@@ -26,3 +26,4 @@ for i in range(7):
     ki_mit_szeret.append((kulcs1, kulcs2))
 
 print(ki_mit_szeret)
+

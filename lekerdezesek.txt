@@ -1,0 +1,7 @@
+#insert into termek (Id,TermekNev,Ar,KategoriaId) values (5, "Bagoly Mágus Sámánbot", 54900, 3);
+select * from termek order by TermekNev;
+select * from kategoria order by KategoriaNev;
+select SzulIdo from vevo;
+select KategoriaId, max(Ar) from termek;
+#select * from kategoria where Id=(select KategoriaId from (select KategoriaId, max(Ar) from termek))
+select kategoria.*, termek.* from kategoria join termek on kategoria.Id=termek.KategoriaId where termek.Ar=54900
